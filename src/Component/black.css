@@ -1,0 +1,123 @@
+.bg {
+    background-color:#111;
+    height: 65vh;
+    position: relative;
+}
+
+.bgb {
+    background-color:#313131;
+    height: 35vh;
+    position: relative;
+}
+
+.centre{
+    text-align:center
+}
+
+.pays{
+    margin:0px;
+}
+
+
+.font{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+.fontmini{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.color{
+    color: #fff;
+}
+.margin15{
+  margin: 10vh;
+}
+.margin10{
+    margin-top: 8%
+  
+}
+
+
+.sb{
+ 
+    height: 35vh;
+    padding: 20px 0px 0px 0px;
+  
+}
+
+hr { 
+    border-top: 2px solid rgb(255, 255, 255); 
+    width: 40px;
+  } 
+  .slick-slide.slick-active.slick-center.slick-current{
+transform: scale(1.1);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+filter: blur(0px); 
+}
+
+.slick-slide{
+    filter: blur(0.7px); 
+}
+.vl{
+    border-left: 2px solid wheat;
+    height: 5vh;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #111;
+    border-color: #111;
+}
+
+
+
+
+.bgs{
+    background-color:#111;
+     height:100vh ;
+}
+.container{
+    background: #313131;
+    width: 50%;
+    height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+input[type=text] {
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: white;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 10px 15px ;
+    font-family: 'Fjalla One', sans-serif;
+    background-image: url('../image/search-solid.svg');
+    background-repeat: no-repeat;
+    background-position:right; 
+    background-size: 30px 30px;
+
+}
+input[type=text]:focus {
+    width: 80%;
+  }
+
+  .box{
+      width: 80%;
+      height: 20%;
+      background-color: #111;
+      margin: 10px auto;
+      border-radius: 3px;
+     
+  }
+  .box:hover{
+    background-color: #000;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+  }
