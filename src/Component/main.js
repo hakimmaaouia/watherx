@@ -7,17 +7,13 @@ class Main extends React.Component {
 /*GET */
 state={  
 }
-url = (loc) => {
-    
-    var r="https://openweathermap.org/data/2.5/weather?"+loc+"&appid=b6907d289e10d714a6e88b30761fae22"
-return r
-}
 
 
 componentDidMount() {
-
-
-    axios.get(this.url(this.props.location))
+  console.log(this.props.location);
+  var r="https://openweathermap.org/data/2.5/weather?"+this.props.location+"&appid=b6907d289e10d714a6e88b30761fae22"
+  console.log(r);
+    axios.get(r)
    .then(res => {
     
        this.setState({

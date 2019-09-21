@@ -48,8 +48,12 @@ const loc = (aux) => {
   {
       r="q="+aux.location.state.info
   }
+      
+       
   return r;
 }
+
+
 let r = "";
 if(lat >0 && long >0 ){
  r = loc(aux)
