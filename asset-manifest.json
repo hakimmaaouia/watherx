@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/watherx/static/css/main.77aa31bf.chunk.css",
-    "main.js": "/watherx/static/js/main.c0857781.chunk.js",
-    "main.js.map": "/watherx/static/js/main.c0857781.chunk.js.map",
+    "main.css": "/watherx/static/css/main.29419a6c.chunk.css",
+    "main.js": "/watherx/static/js/main.c53500b5.chunk.js",
+    "main.js.map": "/watherx/static/js/main.c53500b5.chunk.js.map",
     "runtime~main.js": "/watherx/static/js/runtime~main.4da7032b.js",
     "runtime~main.js.map": "/watherx/static/js/runtime~main.4da7032b.js.map",
     "static/js/2.97281225.chunk.js": "/watherx/static/js/2.97281225.chunk.js",
     "static/js/2.97281225.chunk.js.map": "/watherx/static/js/2.97281225.chunk.js.map",
     "index.html": "/watherx/index.html",
-    "precache-manifest.b854d54bf9f68eb43a095fac62afc4f8.js": "/watherx/precache-manifest.b854d54bf9f68eb43a095fac62afc4f8.js",
+    "precache-manifest.97f9322fdcd7cc682114373a3210b642.js": "/watherx/precache-manifest.97f9322fdcd7cc682114373a3210b642.js",
     "service-worker.js": "/watherx/service-worker.js",
-    "static/css/main.77aa31bf.chunk.css.map": "/watherx/static/css/main.77aa31bf.chunk.css.map",
+    "static/css/main.29419a6c.chunk.css.map": "/watherx/static/css/main.29419a6c.chunk.css.map",
     "static/media/black.css": "/watherx/static/media/search-solid.c6a0effb.svg"
   }
 }
