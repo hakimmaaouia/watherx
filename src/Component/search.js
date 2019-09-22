@@ -7,8 +7,11 @@ const keyEnter = (event) => {
     if (event.key === "Enter") {
        x=event.target.value;
       localStorage.setItem(localStorage.length+1, x);
+      event.target.value=""
     }
   }
+
+  
 
   
  const Search = () => {

@@ -11,7 +11,7 @@ class App extends  React.Component {
 return( 
   <Router>
   <Route path={process.env.PUBLIC_URL+"/"} exact component={Search} />
-  <Route path={process.env.PUBLIC_URL+"/Home"}  component={Home} />
+  <Route path={process.env.PUBLIC_URL+"/Home"} exact component={Home} />
   </Router>
  );
   }
