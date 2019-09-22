@@ -9,7 +9,7 @@ class App extends React.Component {
       <Router>
         <Route path={process.env.PUBLIC_URL + "/"} exact component={Search} />
         <Route
-          path={process.env.PUBLIC_URL + "/Home/"}
+          path={process.env.PUBLIC_URL + "/Home"}
           exact
           component={Home}
         />
