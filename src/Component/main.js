@@ -118,7 +118,7 @@ icon = (id,size) => {
                   </div>
                   
                
-                  <Link to="/Search/">search</Link>
+                  <Link to="/">search</Link>
 
             </div>
 

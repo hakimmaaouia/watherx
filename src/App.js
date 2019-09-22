@@ -10,8 +10,8 @@ class App extends  React.Component {
   render() { 
 return( 
   <Router>
-  <Route path={process.env.PUBLIC_URL+"/"} exact component={Home} />
-  <Route path={process.env.PUBLIC_URL+"/Search/"}  component={Search} />
+  <Route path={process.env.PUBLIC_URL+"/"} exact component={Search} />
+  <Route path={process.env.PUBLIC_URL+"/Home"}  component={Home} />
   </Router>
  );
   }
