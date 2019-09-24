@@ -1,17 +1,26 @@
 import React from "react";
 import "./black.css";
 import { Link } from "react-router-dom";
-let x = "";
-const keyEnter = event => {
-  if (event.key === "Enter") {
-    x = event.target.value;
-    console.log(x);
-    localStorage.setItem(localStorage.length + 1, x);
-    event.target.value = "";
-  }
-};
-var numbers = [1,2,3,4];
+import { useState } from "react";
 const Search = () => {
+  const [count, setCount] = useState([]);
+
+  const setstorege = () => {
+    localStorage.setItem("0", JSON.stringify(count));
+  };
+
+  let x = "";
+  const keyEnter = event => {
+    if (event.key === "Enter") {
+      x = event.target.value;
+      setCount([...count, { x }]);
+      event.target.value = "";
+      setstorege();
+    }
+  };
+
+  console.log(count);
+
   return (
     <div className="bgs">
       <div className="container">
@@ -25,31 +34,18 @@ const Search = () => {
           ></input>
         </div>
 
-
-
-
-{numbers.map((temp) => (
-
-
-
-
-<Link
-          to={{
-            pathname: `/Home/`,
-            state: { info: localStorage.getItem(temp) }
-          }}
-        >
-              <div className="box font" key={temp} >{localStorage.getItem(temp)}</div>
-        </Link>
-
-
-  ))}
-
-
-
-
-
-
+        {count.map(temp => (
+          <div key={Math.random() * 100} className="box">
+            <Link
+              to={{
+                pathname: `/Home`,
+                state: { info: temp.x }
+              }}
+            >
+              <div className="boxs font">{temp.x}</div>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );
