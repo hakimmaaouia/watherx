@@ -20,7 +20,7 @@ class Bot extends React.Component {
   }
   /*time*/
   time = val => {
-    console.log();
+  
 
     var dateObj = new Date(val * 1000);
     var utcString = dateObj.toUTCString();

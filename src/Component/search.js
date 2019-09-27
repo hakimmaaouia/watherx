@@ -1,25 +1,43 @@
 import React from "react";
 import "./black.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+
+
 const Search = () => {
-  const [count, setCount] = useState([]);
+  var car = []
+  car = JSON.parse(localStorage.getItem("0"))
 
-  const setstorege = () => {
-    localStorage.setItem("0", JSON.stringify(count));
-  };
+  
+   const [count, setCount] = useState([]);
+   useEffect(() => {
+    setCount(car)
+    
+  },[]);
 
+
+   
+   
   let x = "";
   const keyEnter = event => {
     if (event.key === "Enter") {
       x = event.target.value;
-      setCount([...count, { x }]);
+      if (count===null){
+       setCount([  x  ]);
+      }else{
+        setCount([ ...count, x  ]);
+      }
+       localStorage.setItem("0",JSON.stringify(count))
       event.target.value = "";
-      setstorege();
+     
     }
   };
 
-  console.log(count);
+ 
+ 
+
+
+
 
   return (
     <div className="bgs">
@@ -34,18 +52,24 @@ const Search = () => {
           ></input>
         </div>
 
-        {count.map(temp => (
+        {
+       
+          count.map(temp => (
+        
           <div key={Math.random() * 100} className="box">
+            {
+            }
             <Link
               to={{
                 pathname: `/Home`,
-                state: { info: temp.x }
+                state: { info: temp }
               }}
             >
-              <div className="boxs font">{temp.x}</div>
+              <div className="boxs font">{temp}</div>
             </Link>
           </div>
-        ))}
+        )) 
+        }
       </div>
     </div>
   );
