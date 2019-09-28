@@ -8,16 +8,19 @@ class Bot extends React.Component {
     tamps: []
   };
   componentDidMount() {
-    axios
-      .get(
-        "https://openweathermap.org/data/2.5/forecast/hourly?id=2464470&appid=b6907d289e10d714a6e88b30761fae22"
-      )
-      .then(res => {
-        this.setState({
-          tamps: res.data.list
-        });
+    var r =
+      "https://openweathermap.org/data/2.5/forecast/hourly?" +
+      this.props.location +
+      "&appid=b6907d289e10d714a6e88b30761fae22";
+    console.log(r);
+    axios.get(r).then(res => {
+      this.setState({
+        tamps: res.data.list
       });
-  }
+    });
+}
+
+ 
   /*time*/
   time = val => {
   

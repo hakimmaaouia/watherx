@@ -8,7 +8,6 @@ class Main extends React.Component {
   state = {};
 
   componentDidMount() {
-    console.log(this.props.location);
     var r =
       "https://openweathermap.org/data/2.5/weather?" +
       this.props.location +
@@ -96,17 +95,18 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          <div className="centre ">
+        <div className="row">
+          <div className=" col-0">
+        <Link to="/">search</Link>
+        </div>
+        
+          <div className="centre col">
             <p className="font">
               {this.state.name} <i className="far fa-building"></i>
             </p>
-          </div>
-          <div className="centre">
             <p className="fontmini">{this.nord(this.state.type)}</p>
-          </div>
-
-          <Link to="/">search</Link>
+         
+        </div>
         </div>
 
         <div className="centre margin15">

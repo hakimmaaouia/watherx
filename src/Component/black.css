@@ -1,6 +1,6 @@
 .bg {
   background-color: #111;
-  height: 65vh;
+  height: 64vh;
   
 }
 
@@ -31,7 +31,7 @@
   color: #fff;
 }
 .margin15 {
-  margin: 10vh;
+  margin: 9vh;
 }
 .margin10 {
   margin-top: 8%;
@@ -69,12 +69,14 @@ hr {
 
 .bgs {
   background-color: #111;
-  height: 100vh;
+  /* ??? */
+  height: 99vh;
 }
 .container {
   background: #313131;
+ margin-top:1.3%;
   width: 50%;
-  height: 100vh;
+  height: 95%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 input[type="text"] {
@@ -124,3 +126,27 @@ input[type="text"]:focus {
   -webkit-filter: grayscale(100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.avs{
+  top: 0px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    background: #313131;
+   margin-top:1.3%;
+    width: 80%;
+    height: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  input[type="text"]:focus {
+    width: 50%;
+  }
+  .box {
+    width: 87%;
+    height: 20%;
+    background-color: #111;
+    margin: 11px auto;
+    border-radius: 3px;
+  }
+ 
+  }

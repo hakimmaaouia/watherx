@@ -10,7 +10,7 @@ const Home = aux => {
       </div>
       <div className="bgb">
         {" "}
-        <Bot />
+        <Bot location={"q=" + aux.location.state.info} />
       </div>
     </div>
   );
