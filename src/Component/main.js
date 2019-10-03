@@ -113,7 +113,7 @@ class Main extends React.Component {
           <i className={this.icon(this.state.icon, "fa-10x")}></i>
         </div>
 
-        <div className="row centre  ">
+        <div className="row centre  " style={{marginTop:"500px"}}>
           <div className="col">
             <div className="col centre">
               <span className="fontmini"> sunset</span>
