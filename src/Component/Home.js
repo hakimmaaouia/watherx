@@ -6,7 +6,8 @@ const Home = aux => {
   return (
     <div>
       <div className="bg">
-        <Main location={"q=" + aux.location.state.info} />
+        
+        <Main location={aux.location.state.info}loc={aux.location.state.loc} />
       </div>
       <div className="bgb">
         {" "}

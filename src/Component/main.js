@@ -95,11 +95,13 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <div className="row">
-          <div className=" col-0">
-        <Link to="/">search</Link>
+             <div>
+        <Link  to={{
+                    pathname: `/`,
+                    state: { info: this.props.loc}
+                  }}>search</Link>
         </div>
-        
+        <div className="row">
           <div className="centre col">
             <p className="font">
               {this.state.name} <i className="far fa-building"></i>
@@ -113,7 +115,7 @@ class Main extends React.Component {
           <i className={this.icon(this.state.icon, "fa-10x")}></i>
         </div>
 
-        <div className="row centre  " style={{marginTop:"500px"}}>
+        <div className="row centre  " style={{marginTop:"3%"}}>
           <div className="col">
             <div className="col centre">
               <span className="fontmini"> sunset</span>

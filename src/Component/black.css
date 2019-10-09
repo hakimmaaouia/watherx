@@ -1,12 +1,12 @@
 .bg {
   background-color: #111;
-  height: 64vh;
+  height: 65vh;
   
 }
 
 .bgb {
   background-color: #313131;
-  height: 35vh;
+  height: 270px;
 }
 
 .centre {
@@ -78,6 +78,7 @@ hr {
   width: 50%;
   height: 95%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
 }
 input[type="text"] {
   width: 30%;
@@ -86,7 +87,7 @@ input[type="text"] {
   border-radius: 3px;
   font-size: 16px;
   background-color: white;
-  padding: 12px 20px 12px 40px;
+  padding: 12px 20px 12px 20px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
   margin: 10px 15px;
@@ -102,7 +103,7 @@ input[type="text"]:focus {
 
 .box {
   width: 80%;
-  height: 20%;
+  height: 19%;
   background-color: #111;
   margin: 10px auto;
   border-radius: 3px;
@@ -129,6 +130,64 @@ input[type="text"]:focus {
 .avs{
   top: 0px;
 }
+
+
+.btn-pos{
+  position:absolute;                  
+  bottom:0;                          
+  right:2%;   
+  -webkit-animation: breathing 7s ease-out infinite normal;
+  animation: breathing 7s ease-out infinite normal;
+ 
+}
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container {
     background: #313131;
@@ -143,7 +202,7 @@ input[type="text"]:focus {
   }
   .box {
     width: 87%;
-    height: 20%;
+    height: 19%;
     background-color: #111;
     margin: 11px auto;
     border-radius: 3px;
