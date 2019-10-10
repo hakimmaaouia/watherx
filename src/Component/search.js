@@ -27,6 +27,7 @@ const Search = (aux) => {
   };
 
   //location 
+
   const [loc, setloc] = useState("");
 useEffect(() => {
   const getLocation = () => {
@@ -45,10 +46,18 @@ useEffect(() => {
  }
 },[aux.location.state]);
 
+
+
+
+const handeldelete = () => {
+ setCount(["Banana", "Orange", "Apple", "Mango"])
+}
+
   return (
     <div className="bgs">
       <div className="container">
-   
+      
+   {loc!=="" && (
       <Link
                   to={{
                     pathname: `/Home`,
@@ -57,7 +66,9 @@ useEffect(() => {
                 >
       <div  className="font btn-pos"> My Current Location  <i className="fas fa-map-marker-alt"></i></div>
       </Link>
+   ) 
 
+   }
         <div className="centre">
           <label className="font">search</label>
           <input
@@ -78,8 +89,10 @@ useEffect(() => {
                     state: { info: "q="+temp , loc}
                   }}
                 >
+                  
                   <div className="boxs font">{temp}</div>
                 </Link>
+                <div onClick={handeldelete}>x</div>
               </div>
             );
           })
