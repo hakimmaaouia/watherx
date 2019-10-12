@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fbf542bfc6ba92c50148a8ab1397aaa9",
+    "revision": "871ca83a1f7c412e1b670643da7c5e2e",
     "url": "/watherx/index.html"
   },
   {
-    "revision": "9a607c936591fd550411",
-    "url": "/watherx/static/css/main.388e8723.chunk.css"
+    "revision": "8d3284439a6a8c60e536",
+    "url": "/watherx/static/css/main.19a03b38.chunk.css"
   },
   {
-    "revision": "2f74bf4ab0252e7bed50",
-    "url": "/watherx/static/js/2.217d5b09.chunk.js"
+    "revision": "2bd838fcc806df28d83b",
+    "url": "/watherx/static/js/2.67dce7e5.chunk.js"
   },
   {
-    "revision": "9a607c936591fd550411",
-    "url": "/watherx/static/js/main.0a097e21.chunk.js"
+    "revision": "8d3284439a6a8c60e536",
+    "url": "/watherx/static/js/main.03747f59.chunk.js"
   },
   {
     "revision": "e9868bf6391e3460f569",
